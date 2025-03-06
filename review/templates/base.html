@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+      <h1>Welcome to Site!</h1>
+        <img src="{% static 'review/when_the_musics_over.jpg' %}">
+<header>
+
+     <nav>
+    <a href="{% url 'add_album' %}">Add Album</a>
+    <a href="{% url 'add_song' %}">Add Song</a>
+
+    <a href="{% url 'add_comment' %}">Add Comment</a>
+</nav>
+
+    </header>
+<h2>Albums</h2>
+<ul>
+    {% for album in albums %}
+        <li>{{ album.title }} - <a href="{% url 'update_album' album.id %}">Edit</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Songs</h2>
+<ul>
+    {% for song in songs %}
+        <li>{{ song.title }} - <a href="{% url 'update_song' song.id %}">Edit</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Band Members</h2>
+<ul>
+    {% for member in band_members %}
+        <li>{{ member.name }} - <a href="{% url 'update_member' member.id %}">Edit</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Comments</h2>
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment.text }} - <a href="{% url 'update_comment' comment.id %}">Edit</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

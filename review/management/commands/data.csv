@@ -1,0 +1,27 @@
+content:BandMember,,
+member_name,member_role,
+Jim Morrison,Vocals,
+Robby Krieger,Guitar,
+Ray Manzarek,Keyboard,
+John Densmore,Drums,
+,,
+content:Album,,
+album_title,album_release_date,album_cover_image
+The Doors,1/4/1967,images/doors1.jpg
+Strange Days,9/25/1967,images/strangedays.jpg
+Morrison Hotel,2/9/1970,images/morrisonhotel.jpg
+L.A. Woman,4/19/1971,images/lawoman.jpg
+,,
+content:Song,,
+song_title,song_album,song_duration
+Break On Through,The Doors,2:25
+Light My Fire,The Doors,7:00
+People Are Strange,Strange Days,2:12
+Riders on the Storm,L.A. Woman,7:09
+Roadhouse Blues,Morrison Hotel,4:04
+,,
+content:Comment,,
+comment_song,comment_content,comment_date
+Light My Fire,This song is legendary!,3/6/2024
+Riders on the Storm,Haunting and beautiful!,3/6/2024
+Break On Through,Such an iconic opening!,3/6/2024
